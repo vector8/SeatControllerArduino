@@ -29,7 +29,10 @@ void loop()
     output += 2;
   }
 
-  Serial.println(String(output));
+  if(output > 0)
+  {
+    Serial.println(String(output));
+  }
   
   delay(100);
 }
